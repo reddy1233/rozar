@@ -1,0 +1,39 @@
+
+#logger
+logging.level.org.springframework.web=ERROR
+logging.level.com.touchpoint=INFO
+
+# Logging pattern for the console
+logging.pattern.console= "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+# Logging pattern for file
+logging.pattern.file= "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+logging.file=application.log
+
+spring.batch.initializer.enabled=false
+spring.batch.initialize-schema=never
+#spring.jpa.hibernate.ddl-auto=update
+#spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=test
+#spring.datasource.username=DESKTOP-0IBRBFT\reddy
+#spring.datasource.password=1233
+#spring.datasource.first.driverclassname =com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.datasource.url=jdbc:sqlserver://localhost;databaseName=springbootdb
+spring.datasource.username=sa
+spring.datasource.password=Projects@123
+spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+#spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+
+#run every night at (0 23 * * *) (mid night at 23 hours  )
+#run every night at 12 am (0 0 * * *) 
+scheduling.job.cron = 0 0 * * *
+
+
+#60 sec
+#spring.datasource.hikari.connection-timeout=60000
+# max 5
+#spring.datasource.hikari.maximum-pool-size=5
+app.datasource.second.type=com.zaxxer.hikari.HikariDataSource
+app.datasource.second.maximum-pool-size=30
