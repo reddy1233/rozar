@@ -1,9 +1,14 @@
 package com.comopt.touchpoint.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class TouchPointActor {
+public class TouchPointActor implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2715028304215729777L;
 	private String appId;
 	private String transId;
 	private String etlBusinessRecordId;

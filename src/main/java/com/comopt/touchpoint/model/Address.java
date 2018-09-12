@@ -1,7 +1,13 @@
 package com.comopt.touchpoint.model;
 
-public class Address {
+import java.io.Serializable;
 
+public class Address implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2488757039070217414L;
 	private String line1;
 	private String line2;
 	private String cityName;

@@ -24,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
@@ -57,6 +58,8 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
     @Autowired
     private DataSource dataSource; 
     
+    
+    
     @Override
     public void setDataSource(DataSource dataSource) {
     	//donot write spring batch metadata to database
@@ -64,7 +67,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
         // initialize will use a Map based JobRepository (instead of database)
     }
    
-    @Bean
+    @Bean(destroyMethod = "")
     public JdbcCursorItemReader<TouchPointActor> reader(){
     	
     	System.out.println("dataSource>>>>>>"+dataSource);
@@ -72,6 +75,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
      JdbcCursorItemReader<TouchPointActor> reader = new JdbcCursorItemReader<TouchPointActor>();
      reader.setDataSource(dataSource);
      reader.setSql(QUERY);
+     reader.setVerifyCursorPosition(false);
      reader.setRowMapper(new TouchPointActorRowMapper());
      
      return reader;
@@ -98,7 +102,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
         return new TPAItemProcessor();
     }
     
-    @Bean
+    @Bean(destroyMethod="")
     public Step step1() {
     	  return stepBuilderFactory.get("chunkStep")
     		        .<TouchPointActor, TouchPointActor>chunk(10)
@@ -144,6 +148,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
    // @Scheduled(cron = "${scheduling.job.cron}")
   	public void perform() throws Exception {
 
+    	
   		System.out.println("Job Started at :" + new Date());
   		
   		AppConstant.isReadComplete = false;

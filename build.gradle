@@ -39,6 +39,9 @@ dependencies {
 	//compile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '6.1.0.jre7'
     //compile group: 'com.microsoft.sqlserver', name: 'sqljdbc4', version: '4.0'
     testCompile("org.springframework.boot:spring-boot-starter-test")
+    compile("org.springframework.boot:spring-boot-starter-activemq")
+    compile("org.apache.activemq:activemq-broker")
+    compile("com.ibm.mq:mq-jms-spring-boot-starter:+")
     
     compile 'mysql:mysql-connector-java'
     

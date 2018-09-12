@@ -1,7 +1,13 @@
 package com.comopt.touchpoint.model;
 
-public class ExtRefId {
+import java.io.Serializable;
+
+public class ExtRefId implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -594436290266976234L;
 	private String id;
 	private String sourceCd;
 	public String getId() {

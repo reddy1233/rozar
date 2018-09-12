@@ -1,10 +1,15 @@
 package com.comopt.touchpoint.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class Touchpoint {
+public class Touchpoint implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3565969189074381814L;
 	private ExtRefId extRefId;
 	private Initiator initiator;
 	private Initiator aboutWhom;

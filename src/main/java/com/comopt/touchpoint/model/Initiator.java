@@ -1,7 +1,13 @@
 package com.comopt.touchpoint.model;
 
-public class Initiator {
+import java.io.Serializable;
+
+public class Initiator implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8911996474203861917L;
 	private String id;
 	private String category;
 	private String constinuencyCd;
