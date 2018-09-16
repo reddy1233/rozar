@@ -25,13 +25,14 @@ public class CustomItemWriter implements ItemWriter<TouchPointActor> {
 	public void write(List<? extends TouchPointActor> data) throws Exception {
 		// TODO Auto-generated method stub
 		AppConstant.isReadComplete = true;
-		//ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper mapper = new ObjectMapper();
     	String json;
 		try {
-			//json = mapper.writeValueAsString(data);
-			jmsTemplate.convertAndSend("DEV.QUEUE.1", data);
+			json = mapper.writeValueAsString(data);
+			log.info("JSON:Touch Point JSON Strings send to queue "+json);
+			//jmsTemplate.convertAndSend("DEV.QUEUE.1", data);
 		    
-			log.info("Touch Point JSON Strings send to queue "+data);
+			
 		} catch (Exception e) {
 			
 			e.printStackTrace();

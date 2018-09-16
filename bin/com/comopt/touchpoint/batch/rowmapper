@@ -1,0 +1,51 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.comopt.touchpoint.model.Initiator;
+import com.comopt.touchpoint.model.TouchPointActor;
+import com.comopt.touchpoint.model.Touchpoint;
+
+public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
+
+	List<Touchpoint> tpList = null;
+	Touchpoint tp =null;
+	Initiator aboutWhom = null;
+	TouchPointActor tpa = null;
+ @Override
+ public TouchPointActor mapRow(ResultSet rs, int rowNum) throws SQLException {
+	 
+	/* while(rs.next()) {	  
+	 }*/
+	 
+	 if(tpa ==null) {
+		  tpa = new TouchPointActor();
+	 }
+	 
+	 tpa.setAppId(rs.getString("file_nm"));
+	 tpa.setTransId(rs.getString("trans_id"));
+	 tpa.setSourceCd(rs.getString("source_system_cd"));
+	 tpa.setEtlBusinessRecordId(rs.getString(""));
+	 if(tpList == null) {
+		 tpList = new ArrayList<>();
+		 
+	 }
+	 tp = new Touchpoint();
+	 //set tp properties
+	 
+	 aboutWhom = new Initiator();
+	 //set all propeterties
+	 aboutWhom.setCategory(rs.getString("category"));
+	 tp.setAboutWhom(aboutWhom);
+	 
+	 
+	 
+	 tpList.add(tp);
+  
+  return tpa;
+ }
+ 
+}

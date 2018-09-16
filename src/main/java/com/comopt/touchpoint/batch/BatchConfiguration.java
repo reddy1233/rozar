@@ -3,7 +3,9 @@ package com.comopt.touchpoint.batch;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -24,12 +26,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import com.comopt.touchpoint.AppConstant;
+import com.comopt.touchpoint.model.Initiator;
 import com.comopt.touchpoint.model.TouchPointActor;
+import com.comopt.touchpoint.model.Touchpoint;
 
 
 @Configuration
@@ -37,9 +40,10 @@ import com.comopt.touchpoint.model.TouchPointActor;
 @EnableScheduling
 public class BatchConfiguration extends DefaultBatchConfigurer{
 	
-	private final String QUERY ="select * from ccm_trans_audit ta, ccm_trans_dtls_audit tda, ccm_trans_dtls_strg_pfm_status_audit tdsps, ccm_trans_comm_chnl_status_audit tccsa, " + 
+	private final String QUERY ="select * from ccm_trans_audit ta, source_sys ss, ccm_trans_dtls_audit tda, ccm_trans_dtls_strg_pfm_status_audit tdsps, ccm_trans_comm_chnl_status_audit tccsa, " + 
 			"ccm_trans_dtls_comm_chnl_status_audit tdcsa where " + 
 			" ta.trans_id = tda.trans_id  " + 
+			"and ss.source_system_cd = ta.source_system_cd " +
 			"and tda.trns_dtls_seq_id  = tdsps.trns_dtls_seq_id   " + 
 			"and ta.trans_id =tccsa.trans_id   " + 
 			"and tda.trns_dtls_seq_id =tdcsa.trns_dtls_seq_id   " + 
@@ -79,22 +83,6 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
      reader.setRowMapper(new TouchPointActorRowMapper());
      
      return reader;
-    }
-
-    
-    public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
-
-     @Override
-     public TouchPointActor mapRow(ResultSet rs, int rowNum) throws SQLException {
-    	 
-    	
-    	 TouchPointActor tpa = new TouchPointActor();
-    	 tpa.setAppId(rs.getString("file_nm"));
-    	 tpa.setTransId(rs.getString("trans_id"));
-      
-      return tpa;
-     }
-     
     }
  
     @Bean
