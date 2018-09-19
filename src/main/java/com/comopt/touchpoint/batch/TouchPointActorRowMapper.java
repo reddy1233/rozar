@@ -9,6 +9,8 @@ import java.util.List;
 import org.springframework.jdbc.core.RowMapper;
 
 import com.comopt.touchpoint.AppConstant;
+import com.comopt.touchpoint.model.Address;
+import com.comopt.touchpoint.model.CommDetails;
 import com.comopt.touchpoint.model.Initiator;
 import com.comopt.touchpoint.model.TouchPointActor;
 import com.comopt.touchpoint.model.Touchpoint;
@@ -23,7 +25,7 @@ public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
 	 
 	 tpa.setAppId(AppConstant.APP_ID);
 	 tpa.setTransId(rs.getString("trans_id"));
-	 tpa.setSourceCd(rs.getString("source_sytem_cd"));
+	 tpa.setSourceCd(rs.getString("source_system_cd"));
 	 tpa.setEtlBusinessRecordId(rs.getString("comm_pfm_trns_id"));	 
 	 tpa.setTenantId(1);
 	 Touchpoint tp = new Touchpoint();
@@ -39,6 +41,7 @@ public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
 	 
 	 tp.setInitiator(initiator);
 	 
+	 // aboutWhom
 	 /*if doc_type=grp and set group id else if doc_type=mbr and set member id */
 	 Initiator aboutWhom = new Initiator();
 	 aboutWhom.setCategory(rs.getString("doc_type"));
@@ -57,15 +60,33 @@ public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
 	 aboutWhom.setConstinuencyCd("ENRL");
 	 tp.setAboutWhom(aboutWhom);
 	 
+	 // Receiver
 	 Initiator receiver = new Initiator(); 
 	 receiver.setId("whid"); // TBD 
 	 receiver.setCategory("MBR"); // TBD
 	 receiver.setConstinuencyCd("ENRL"); // default to ENRL for now 
 	 tp.setWhReciever(receiver);
 	 
-	 // remaining TBD
-	 
 	 tpList.add(tp); 
+	 
+	 // commDetails 
+	 CommDetails cmd = new CommDetails();
+	 
+	 cmd.setTypeCd("Home");
+	 
+	 // list of address 
+	 List<Address> adList = new ArrayList<>();
+	 Address ad = new Address();
+	 ad.setLine1("line 1");
+	 ad.setLine2("line2");
+	 ad.setCityName("Jacksonville");
+	 ad.setStateName("Florida");
+	 ad.setPostalCd("123456");
+	  
+	 adList.add(ad);
+	 cmd.setAddress(adList);
+	 
+	 tp.setCommDetails(cmd);
 	 
 	 tpa.setTouchpoint(tpList);
   
