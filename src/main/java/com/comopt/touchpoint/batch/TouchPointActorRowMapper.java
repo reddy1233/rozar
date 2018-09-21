@@ -16,16 +16,21 @@ import com.comopt.touchpoint.model.TouchPointActor;
 import com.comopt.touchpoint.model.Touchpoint;
 
 public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
+	
+	int count = 0;
 
  @Override
  public TouchPointActor mapRow(ResultSet rs, int rowNum) throws SQLException {
+	 
+	 count=count+1;
+	 System.out.println("coiunt >>."+count);
 	 
 	 List<Touchpoint> tpList = new ArrayList<>();
 	 TouchPointActor tpa = new TouchPointActor();
 	 
 	 tpa.setAppId(AppConstant.APP_ID);
 	 tpa.setTransId(rs.getString("trans_id"));
-	 tpa.setSourceCd(rs.getString("source_system_cd"));
+	// tpa.setSourceCd(rs.getString("source_system_cd"));// rs.getInt("source_system_cd")
 	 tpa.setEtlBusinessRecordId(rs.getString("comm_pfm_trns_id"));	 
 	 tpa.setTenantId(1);
 	 Touchpoint tp = new Touchpoint();
@@ -90,7 +95,7 @@ public class TouchPointActorRowMapper implements RowMapper<TouchPointActor>{
 	 
 	 tpa.setTouchpoint(tpList);
   
-  return tpa;
+	 return tpa;
  }
  
 }

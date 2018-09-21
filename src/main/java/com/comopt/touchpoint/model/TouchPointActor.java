@@ -41,20 +41,20 @@ public class TouchPointActor implements Serializable {
 		this.etlBusinessRecordId = etlBusinessRecordId;
 	}
 
-	public String getSourceCd() {
-		return sourceCd;
-	}
-
-	public void setSourceCd(String sourceCd) {
-		this.sourceCd = sourceCd;
-	}
-
 	public long getTenantId() {
 		return tenantId;
 	}
 
 	public void setTenantId(long tenantId) {
 		this.tenantId = tenantId;
+	}
+
+	public String getSourceCd() {
+		return sourceCd;
+	}
+
+	public void setSourceCd(String sourceCd) {
+		this.sourceCd = sourceCd;
 	}
 
 	public List<Touchpoint> getTouchpoint() {

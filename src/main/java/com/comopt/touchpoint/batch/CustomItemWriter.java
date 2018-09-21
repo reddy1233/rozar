@@ -10,7 +10,7 @@ import org.springframework.jms.core.JmsTemplate;
 
 import com.comopt.touchpoint.AppConstant;
 import com.comopt.touchpoint.model.TouchPointActor;
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.comopt.touchpoint.service.TouchPointActorService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CustomItemWriter implements ItemWriter<TouchPointActor> {
@@ -19,6 +19,9 @@ public class CustomItemWriter implements ItemWriter<TouchPointActor> {
 	
 	@Autowired
     private JmsTemplate jmsTemplate;
+	
+	@Autowired
+	TouchPointActorService touchPointActorService;
 
 
 	@Override
@@ -29,8 +32,13 @@ public class CustomItemWriter implements ItemWriter<TouchPointActor> {
     	String json;
 		try {
 			json = mapper.writeValueAsString(data);
+			
 			log.info("JSON:Touch Point JSON Strings send to queue "+json);
+			
+			System.out.println("JSON to Queue" +data);
 			//jmsTemplate.convertAndSend("DEV.QUEUE.1", data);
+			
+			touchPointActorService.updateProcessedTouchPoint(data);
 		    
 			
 		} catch (Exception e) {

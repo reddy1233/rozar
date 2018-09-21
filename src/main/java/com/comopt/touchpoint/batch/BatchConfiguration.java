@@ -75,6 +75,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
     public JdbcCursorItemReader<TouchPointActor> reader(){
     	
     	System.out.println("dataSource>>>>>>"+dataSource);
+    	System.out.println("Query::"+QUERY);
     	
      JdbcCursorItemReader<TouchPointActor> reader = new JdbcCursorItemReader<TouchPointActor>();
      reader.setDataSource(dataSource);
@@ -93,7 +94,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
     @Bean(destroyMethod="")
     public Step step1() {
     	  return stepBuilderFactory.get("chunkStep")
-    		        .<TouchPointActor, TouchPointActor>chunk(10)
+    		        .<TouchPointActor, TouchPointActor>chunk(1)
     		        .reader(reader())
     		        .processor(processor())
     		        .writer(writer())
@@ -132,7 +133,7 @@ public class BatchConfiguration extends DefaultBatchConfigurer{
     }
     
    // @Scheduled(cron = "*/50 * * * * *")
-    @Scheduled(fixedRate = 60000)
+   // @Scheduled(fixedRate = 60000)
    // @Scheduled(cron = "${scheduling.job.cron}")
   	public void perform() throws Exception {
 

@@ -1,228 +1,36 @@
-"2018-09-18 21:52:23 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 4532 (D:\rozar\bin started by reddy in D:\rozar)
-""2018-09-18 21:52:23 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
-""2018-09-18 21:52:23 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3427b02d: startup date [Tue Sep 18 21:52:23 EDT 2018]; root of context hierarchy
-""2018-09-18 21:52:24 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
-""2018-09-18 21:52:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2018-09-18 21:52:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2018-09-18 21:52:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-""2018-09-18 21:52:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+"2018-09-20 21:00:51 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 1828 (D:\rozar\bin started by reddy in D:\rozar)
+""2018-09-20 21:00:51 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
+""2018-09-20 21:00:51 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a69b07: startup date [Thu Sep 20 21:00:51 EDT 2018]; root of context hierarchy
+""2018-09-20 21:00:52 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
+""2018-09-20 21:00:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-09-20 21:00:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-09-20 21:00:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:00:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-""2018-09-18 21:52:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
-""2018-09-18 21:52:27 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2018-09-18 21:52:27 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-""2018-09-18 21:52:28 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-""2018-09-18 21:52:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2018-09-18 21:52:29 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
-""2018-09-18 21:52:29 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
-""2018-09-18 21:52:29 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
-""2018-09-18 21:52:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-""2018-09-18 21:52:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
-""2018-09-18 21:52:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-""2018-09-18 21:52:31 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
-""2018-09-18 21:52:32 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-""2018-09-18 21:52:32 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 9.791 seconds (JVM running for 10.826)
-""2018-09-18 21:52:32 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
-""2018-09-18 21:52:32 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
-""2018-09-18 21:52:32 [pool-2-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{TPA batch JobID=1537321952469}]
-""2018-09-18 21:52:32 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
-""2018-09-18 21:52:32 [pool-2-thread-1] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
-""2018-09-18 21:52:32 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-""2018-09-18 21:52:32 [main] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-""2018-09-18 21:52:33 [main] ERROR o.s.batch.core.step.AbstractStep - Encountered an error executing step chunkStep in job testJob
-"org.springframework.jdbc.UncategorizedSQLException: Attempt to process next row failed; uncategorized SQLException for SQL [select * from ccm_trans_audit ta, source_sys ss, ccm_trans_dtls_audit tda, ccm_trans_dtls_strg_pfm_status_audit tdsps, ccm_trans_comm_chnl_status_audit tccsa, ccm_trans_dtls_comm_chnl_status_audit tdcsa where  ta.trans_id = tda.trans_id  and ss.source_system_cd = ta.source_system_cd and tda.trns_dtls_seq_id  = tdsps.trns_dtls_seq_id   and ta.trans_id =tccsa.trans_id   and tda.trns_dtls_seq_id =tdcsa.trns_dtls_seq_id   and tdsps.strg_pfm_status= 'Accepted' and tdcsa.comm_chnl_status_cd ='0'  ]; SQL state [S0022]; error code [0]; Column 'source_sytem_cd' not found.; nested exception is java.sql.SQLException: Column 'source_sytem_cd' not found.
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
-	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:482)
-	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:89)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:157)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:116)
-	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375)
-	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
-	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:110)
-	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
-	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
-	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:272)
-	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
-	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375)
-	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
-	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145)
-	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
-	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
-	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
-	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:66)
-	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
-	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:136)
-	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:308)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:141)
-	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:134)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:163)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:179)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:134)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:128)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.comopt.touchpoint.TouchPointApplication.main(TouchPointApplication.java:15)
-Caused by: java.sql.SQLException: Column 'source_sytem_cd' not found.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
-	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1080)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5177)
-	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java)
-	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:28)
-	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:1)
-	at org.springframework.batch.item.database.JdbcCursorItemReader.readCursor(JdbcCursorItemReader.java:139)
-	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:477)
-	... 39 common frames omitted
-"2018-09-18 21:52:33 [pool-2-thread-1] ERROR o.s.batch.core.step.AbstractStep - Encountered an error executing step chunkStep in job testJob
-"org.springframework.jdbc.UncategorizedSQLException: Attempt to process next row failed; uncategorized SQLException for SQL [select * from ccm_trans_audit ta, source_sys ss, ccm_trans_dtls_audit tda, ccm_trans_dtls_strg_pfm_status_audit tdsps, ccm_trans_comm_chnl_status_audit tccsa, ccm_trans_dtls_comm_chnl_status_audit tdcsa where  ta.trans_id = tda.trans_id  and ss.source_system_cd = ta.source_system_cd and tda.trns_dtls_seq_id  = tdsps.trns_dtls_seq_id   and ta.trans_id =tccsa.trans_id   and tda.trns_dtls_seq_id =tdcsa.trns_dtls_seq_id   and tdsps.strg_pfm_status= 'Accepted' and tdcsa.comm_chnl_status_cd ='0'  ]; SQL state [S0022]; error code [0]; Column 'source_sytem_cd' not found.; nested exception is java.sql.SQLException: Column 'source_sytem_cd' not found.
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
-	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:482)
-	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:89)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:157)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:116)
-	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375)
-	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
-	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145)
-	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:110)
-	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
-	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:406)
-	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:330)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:272)
-	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:81)
-	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375)
-	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
-	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145)
-	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:257)
-	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:200)
-	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
-	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:66)
-	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
-	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:136)
-	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:308)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:141)
-	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:134)
-	at com.comopt.touchpoint.batch.BatchConfiguration.perform(BatchConfiguration.java:147)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.sql.SQLException: Column 'source_sytem_cd' not found.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
-	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1080)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5177)
-	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java)
-	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:28)
-	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:1)
-	at org.springframework.batch.item.database.JdbcCursorItemReader.readCursor(JdbcCursorItemReader.java:139)
-	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:477)
-	... 43 common frames omitted
-"2018-09-18 21:52:33 [pool-2-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{TPA batch JobID=1537321952469}] and the following status: [FAILED]
-""2018-09-18 21:52:33 [main] ERROR o.s.batch.core.step.AbstractStep - Exception while closing step execution resources in step chunkStep in job testJob
-"org.springframework.batch.item.ItemStreamException: Error while closing item reader
-	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.close(AbstractItemCountingItemStreamItemReader.java:138)
-	at org.springframework.batch.item.support.CompositeItemStream.close(CompositeItemStream.java:89)
-	at org.springframework.batch.core.step.tasklet.TaskletStep.close(TaskletStep.java:305)
-	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:271)
-	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
-	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:66)
-	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
-	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:136)
-	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:308)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:141)
-	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:134)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:163)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:179)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:134)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:128)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.comopt.touchpoint.TouchPointApplication.main(TouchPointApplication.java:15)
-Caused by: java.sql.SQLException: Connection is closed
-	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:490)
-	at com.sun.proxy.$Proxy56.setAutoCommit(Unknown Source)
-	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395)
-	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
-	at org.springframework.batch.item.database.AbstractCursorItemReader.doClose(AbstractCursorItemReader.java:400)
-	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.close(AbstractItemCountingItemStreamItemReader.java:135)
-	... 23 common frames omitted
-"2018-09-18 21:52:33 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [FAILED]
-""2018-09-18 21:52:37 [DefaultMessageListenerContainer-1] INFO  o.s.j.l.DefaultMessageListenerContainer - JMS message listener invoker needs to establish shared Connection
-""2018-09-18 21:52:38 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:52:44 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:52:50 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:52:56 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:53:02 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:53:12 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 10784 (D:\rozar\bin started by reddy in D:\rozar)
-""2018-09-18 21:53:12 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
-""2018-09-18 21:53:12 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41e36e46: startup date [Tue Sep 18 21:53:12 EDT 2018]; root of context hierarchy
-""2018-09-18 21:53:13 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
-""2018-09-18 21:53:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2018-09-18 21:53:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2018-09-18 21:53:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-""2018-09-18 21:53:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-""2018-09-18 21:53:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
-""2018-09-18 21:53:17 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2018-09-18 21:53:17 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-""2018-09-18 21:53:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-""2018-09-18 21:53:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2018-09-18 21:53:18 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
-""2018-09-18 21:53:18 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
-""2018-09-18 21:53:18 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
-""2018-09-18 21:53:20 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-""2018-09-18 21:53:20 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
-""2018-09-18 21:53:20 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-""2018-09-18 21:53:20 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
-""2018-09-18 21:53:21 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-""2018-09-18 21:53:21 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 9.65 seconds (JVM running for 10.632)
-""2018-09-18 21:53:21 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
-""2018-09-18 21:53:21 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
-""2018-09-18 21:53:21 [pool-1-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{TPA batch JobID=1537322001469}]
-""2018-09-18 21:53:21 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
-""2018-09-18 21:53:21 [pool-1-thread-1] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
-""2018-09-18 21:53:21 [pool-1-thread-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-""2018-09-18 21:53:22 [pool-1-thread-1] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-""2018-09-18 21:53:22 [pool-1-thread-1] ERROR o.s.batch.core.step.AbstractStep - Encountered an error executing step chunkStep in job testJob
+""2018-09-20 21:00:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+""2018-09-20 21:00:56 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-09-20 21:00:57 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-09-20 21:00:57 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2018-09-20 21:00:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:00:58 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:00:58 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+""2018-09-20 21:00:58 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:01:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-09-20 21:01:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-09-20 21:01:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-09-20 21:01:01 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2018-09-20 21:01:01 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2018-09-20 21:01:01 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 11.512 seconds (JVM running for 13.165)
+""2018-09-20 21:01:01 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
+""2018-09-20 21:01:01 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
+""2018-09-20 21:01:01 [pool-2-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{TPA batch JobID=1537491661683}]
+""2018-09-20 21:01:02 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:01:02 [pool-2-thread-1] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:01:02 [pool-2-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{TPA batch JobID=1537491661683}] and the following status: [COMPLETED]
+""2018-09-20 21:01:02 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+""2018-09-20 21:01:03 [main] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+""2018-09-20 21:01:03 [main] ERROR o.s.batch.core.step.AbstractStep - Encountered an error executing step chunkStep in job testJob
 "org.springframework.dao.TransientDataAccessResourceException: Attempt to process next row failed; SQL [select * from ccm_trans_audit ta, source_sys ss, ccm_trans_dtls_audit tda, ccm_trans_dtls_strg_pfm_status_audit tdsps, ccm_trans_comm_chnl_status_audit tccsa, ccm_trans_dtls_comm_chnl_status_audit tdcsa where  ta.trans_id = tda.trans_id  and ss.source_system_cd = ta.source_system_cd and tda.trns_dtls_seq_id  = tdsps.trns_dtls_seq_id   and ta.trans_id =tccsa.trans_id   and tda.trns_dtls_seq_id =tdcsa.trns_dtls_seq_id   and tdsps.strg_pfm_status= 'Accepted' and tdcsa.comm_chnl_status_cd ='0'  After end of result set; nested exception is java.sql.SQLException: After end of result set
 	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:110)
 	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
@@ -258,20 +66,16 @@ Caused by: java.sql.SQLException: Connection is closed
 	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:141)
 	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
 	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:134)
-	at com.comopt.touchpoint.batch.BatchConfiguration.perform(BatchConfiguration.java:147)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:163)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:179)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:134)
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:128)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.comopt.touchpoint.TouchPointApplication.main(TouchPointApplication.java:15)
 Caused by: java.sql.SQLException: After end of result set
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
@@ -282,14 +86,12 @@ Caused by: java.sql.SQLException: After end of result set
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5138)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5177)
 	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java)
-	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:28)
+	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:27)
 	at com.comopt.touchpoint.batch.TouchPointActorRowMapper.mapRow(TouchPointActorRowMapper.java:1)
 	at org.springframework.batch.item.database.JdbcCursorItemReader.readCursor(JdbcCursorItemReader.java:139)
 	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:477)
-	... 43 common frames omitted
-"2018-09-18 21:53:22 [pool-1-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{TPA batch JobID=1537322001469}] and the following status: [FAILED]
-""2018-09-18 21:53:22 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"2","etlBusinessRecordId":"comm_pfm_trns_id2","sourceCd":"source_sytem_cd2","tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd2","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","era":"CE","dayOfMonth":18,"dayOfWeek":"TUESDAY","dayOfYear":261,"leapYear":false,"monthValue":9,"chronology":{"id":"ISO","calendarType":"iso8601"}},"commDetails":null}]}]
-""2018-09-18 21:53:22 [main] ERROR o.s.batch.core.step.AbstractStep - Exception while closing step execution resources in step chunkStep in job testJob
+	... 39 common frames omitted
+"2018-09-20 21:01:03 [main] ERROR o.s.batch.core.step.AbstractStep - Exception while closing step execution resources in step chunkStep in job testJob
 "org.springframework.batch.item.ItemStreamException: Error while closing item reader
 	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.close(AbstractItemCountingItemStreamItemReader.java:138)
 	at org.springframework.batch.item.support.CompositeItemStream.close(CompositeItemStream.java:89)
@@ -323,85 +125,180 @@ Caused by: java.sql.SQLException: Connection is closed
 	at org.springframework.batch.item.database.AbstractCursorItemReader.doClose(AbstractCursorItemReader.java:400)
 	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.close(AbstractItemCountingItemStreamItemReader.java:135)
 	... 23 common frames omitted
-"2018-09-18 21:53:22 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
-""2018-09-18 21:53:26 [DefaultMessageListenerContainer-1] INFO  o.s.j.l.DefaultMessageListenerContainer - JMS message listener invoker needs to establish shared Connection
-""2018-09-18 21:53:27 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:53:33 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:53:39 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:53:45 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:53:51 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:55:56 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 9144 (D:\rozar\bin started by reddy in D:\rozar)
-""2018-09-18 21:55:56 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
-""2018-09-18 21:55:56 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c407114: startup date [Tue Sep 18 21:55:56 EDT 2018]; root of context hierarchy
-""2018-09-18 21:55:57 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
-""2018-09-18 21:55:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2018-09-18 21:56:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2018-09-18 21:56:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-""2018-09-18 21:56:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+"2018-09-20 21:01:03 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [FAILED]
+""2018-09-20 21:03:00 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 12064 (D:\rozar\bin started by reddy in D:\rozar)
+""2018-09-20 21:03:00 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
+""2018-09-20 21:03:00 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@50a638b5: startup date [Thu Sep 20 21:03:00 EDT 2018]; root of context hierarchy
+""2018-09-20 21:03:01 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
+""2018-09-20 21:03:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-09-20 21:03:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-09-20 21:03:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:03:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-""2018-09-18 21:56:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
-""2018-09-18 21:56:01 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2018-09-18 21:56:01 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-""2018-09-18 21:56:01 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-""2018-09-18 21:56:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2018-09-18 21:56:01 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
-""2018-09-18 21:56:01 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
-""2018-09-18 21:56:01 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
-""2018-09-18 21:56:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-""2018-09-18 21:56:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
-""2018-09-18 21:56:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-""2018-09-18 21:56:03 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
-""2018-09-18 21:56:05 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-""2018-09-18 21:56:05 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 9.288 seconds (JVM running for 10.165)
-""2018-09-18 21:56:05 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
-""2018-09-18 21:56:05 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
-""2018-09-18 21:56:05 [pool-1-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{TPA batch JobID=1537322165244}]
-""2018-09-18 21:56:05 [pool-1-thread-1] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
-""2018-09-18 21:56:05 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
-""2018-09-18 21:56:05 [pool-1-thread-1] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"2","etlBusinessRecordId":"comm_pfm_trns_id2","sourceCd":"source_sytem_cd2","tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd2","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","chronology":{"id":"ISO","calendarType":"iso8601"},"era":"CE","dayOfMonth":18,"dayOfWeek":"TUESDAY","dayOfYear":261,"leapYear":false,"monthValue":9},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]},{"appId":"ccm","transId":"3","etlBusinessRecordId":"comm_pfm_trns_id3","sourceCd":"source_sytem_cd3","tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd3","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1220","category":"mbr","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","chronology":{"id":"ISO","calendarType":"iso8601"},"era":"CE","dayOfMonth":18,"dayOfWeek":"TUESDAY","dayOfYear":261,"leapYear":false,"monthValue":9},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
-""2018-09-18 21:56:06 [pool-1-thread-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{TPA batch JobID=1537322165244}] and the following status: [COMPLETED]
-""2018-09-18 21:56:06 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"2","etlBusinessRecordId":"comm_pfm_trns_id2","sourceCd":"source_sytem_cd2","tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd2","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","chronology":{"id":"ISO","calendarType":"iso8601"},"era":"CE","dayOfMonth":18,"dayOfWeek":"TUESDAY","dayOfYear":261,"leapYear":false,"monthValue":9},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
-""2018-09-18 21:56:06 [main] ERROR o.s.batch.core.step.AbstractStep - Exception while closing step execution resources in step chunkStep in job testJob
-"org.springframework.batch.item.ItemStreamException: Error while closing item reader
-	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.close(AbstractItemCountingItemStreamItemReader.java:138)
-	at org.springframework.batch.item.support.CompositeItemStream.close(CompositeItemStream.java:89)
-	at org.springframework.batch.core.step.tasklet.TaskletStep.close(TaskletStep.java:305)
-	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:271)
-	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
-	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:66)
-	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:67)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
-	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
-	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:136)
-	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:308)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:141)
-	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
-	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:134)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:163)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:179)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:134)
-	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:128)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.comopt.touchpoint.TouchPointApplication.main(TouchPointApplication.java:15)
-Caused by: java.sql.SQLException: Connection is closed
-	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:490)
-	at com.sun.proxy.$Proxy56.setAutoCommit(Unknown Source)
-	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395)
-	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
-	at org.springframework.batch.item.database.AbstractCursorItemReader.doClose(AbstractCursorItemReader.java:400)
-	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.close(AbstractItemCountingItemStreamItemReader.java:135)
-	... 23 common frames omitted
-"2018-09-18 21:56:06 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
-""2018-09-18 21:56:10 [DefaultMessageListenerContainer-1] INFO  o.s.j.l.DefaultMessageListenerContainer - JMS message listener invoker needs to establish shared Connection
-""2018-09-18 21:56:11 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:56:17 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:56:23 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:56:29 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:56:35 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
-""2018-09-18 21:56:41 [DefaultMessageListenerContainer-1] ERROR o.s.j.l.DefaultMessageListenerContainer - Could not refresh JMS Connection for destination 'DEV.QUEUE.1' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: JMSWMQ0018: Failed to connect to queue manager 'QM1' with connection mode 'Client' and host name '0.0.0.0(1414)'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2538' ('MQRC_HOST_NOT_AVAILABLE').
+""2018-09-20 21:03:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+""2018-09-20 21:03:07 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-09-20 21:03:07 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-09-20 21:03:07 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2018-09-20 21:03:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:03:08 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:03:08 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+""2018-09-20 21:03:08 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:03:11 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-09-20 21:03:11 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-09-20 21:03:11 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-09-20 21:03:11 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2018-09-20 21:03:11 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 11.99 seconds (JVM running for 13.113)
+""2018-09-20 21:03:11 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
+""2018-09-20 21:03:11 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
+""2018-09-20 21:03:11 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:03:12 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"1","etlBusinessRecordId":"comm_pfm_trns_id1","sourceCd":null,"tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd1","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","chronology":{"id":"ISO","calendarType":"iso8601"},"era":"CE","dayOfMonth":20,"dayOfWeek":"THURSDAY","dayOfYear":263,"leapYear":false,"monthValue":9},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
+""2018-09-20 21:03:12 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+""2018-09-20 21:03:12 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@50a638b5: startup date [Thu Sep 20 21:03:00 EDT 2018]; root of context hierarchy
+""2018-09-20 21:03:12 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+""2018-09-20 21:03:12 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-09-20 21:03:12 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-09-20 21:03:12 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:03:12 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-09-20 21:03:12 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-09-20 21:24:38 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 9800 (D:\rozar\bin started by reddy in D:\rozar)
+""2018-09-20 21:24:38 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
+""2018-09-20 21:24:38 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@636be97c: startup date [Thu Sep 20 21:24:38 EDT 2018]; root of context hierarchy
+""2018-09-20 21:24:39 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
+""2018-09-20 21:24:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-09-20 21:24:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-09-20 21:24:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:24:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-09-20 21:24:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+""2018-09-20 21:24:44 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-09-20 21:24:44 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-09-20 21:24:44 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2018-09-20 21:24:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:24:45 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:24:45 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+""2018-09-20 21:24:45 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:24:48 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-09-20 21:24:48 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-09-20 21:24:48 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-09-20 21:24:48 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2018-09-20 21:24:48 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 10.966 seconds (JVM running for 12.251)
+""2018-09-20 21:24:48 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
+""2018-09-20 21:24:48 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
+""2018-09-20 21:24:48 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:24:49 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"1","etlBusinessRecordId":"comm_pfm_trns_id1","sourceCd":null,"tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd1","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","chronology":{"id":"ISO","calendarType":"iso8601"},"era":"CE","dayOfMonth":20,"dayOfWeek":"THURSDAY","dayOfYear":263,"leapYear":false,"monthValue":9},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
+""2018-09-20 21:24:49 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+""2018-09-20 21:24:49 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@636be97c: startup date [Thu Sep 20 21:24:38 EDT 2018]; root of context hierarchy
+""2018-09-20 21:24:49 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+""2018-09-20 21:24:49 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-09-20 21:24:49 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-09-20 21:24:49 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:24:49 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-09-20 21:24:49 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-09-20 21:26:03 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 8244 (D:\rozar\bin started by reddy in D:\rozar)
+""2018-09-20 21:26:03 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
+""2018-09-20 21:26:03 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a69b07: startup date [Thu Sep 20 21:26:03 EDT 2018]; root of context hierarchy
+""2018-09-20 21:26:04 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
+""2018-09-20 21:26:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-09-20 21:26:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-09-20 21:26:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:26:08 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-09-20 21:26:08 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+""2018-09-20 21:26:08 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-09-20 21:26:08 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-09-20 21:26:09 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2018-09-20 21:26:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:26:09 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:26:09 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+""2018-09-20 21:26:10 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:26:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-09-20 21:26:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-09-20 21:26:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-09-20 21:26:12 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2018-09-20 21:26:12 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 9.555 seconds (JVM running for 10.73)
+""2018-09-20 21:26:12 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
+""2018-09-20 21:26:12 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
+""2018-09-20 21:26:12 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:26:13 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"1","etlBusinessRecordId":"comm_pfm_trns_id1","sourceCd":null,"tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd1","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","era":"CE","dayOfMonth":20,"dayOfWeek":"THURSDAY","dayOfYear":263,"leapYear":false,"monthValue":9,"chronology":{"id":"ISO","calendarType":"iso8601"}},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
+""2018-09-20 21:26:13 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+""2018-09-20 21:26:13 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a69b07: startup date [Thu Sep 20 21:26:03 EDT 2018]; root of context hierarchy
+""2018-09-20 21:26:13 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+""2018-09-20 21:26:13 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-09-20 21:26:13 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-09-20 21:26:13 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:26:13 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-09-20 21:26:14 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-09-20 21:36:13 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 976 (D:\rozar\bin started by reddy in D:\rozar)
+""2018-09-20 21:36:13 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
+""2018-09-20 21:36:13 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@39529185: startup date [Thu Sep 20 21:36:13 EDT 2018]; root of context hierarchy
+""2018-09-20 21:36:14 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
+""2018-09-20 21:36:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-09-20 21:36:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-09-20 21:36:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:36:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-09-20 21:36:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+""2018-09-20 21:36:18 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-09-20 21:36:18 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-09-20 21:36:19 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2018-09-20 21:36:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:36:20 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:36:20 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+""2018-09-20 21:36:20 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:36:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-09-20 21:36:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-09-20 21:36:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-09-20 21:36:22 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2018-09-20 21:36:22 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 10.276 seconds (JVM running for 11.47)
+""2018-09-20 21:36:22 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
+""2018-09-20 21:36:23 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
+""2018-09-20 21:36:23 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:36:23 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"1","etlBusinessRecordId":"comm_pfm_trns_id1","sourceCd":null,"tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd1","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","era":"CE","dayOfMonth":20,"dayOfWeek":"THURSDAY","dayOfYear":263,"leapYear":false,"monthValue":9,"chronology":{"id":"ISO","calendarType":"iso8601"}},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
+""2018-09-20 21:36:24 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+""2018-09-20 21:36:24 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@39529185: startup date [Thu Sep 20 21:36:13 EDT 2018]; root of context hierarchy
+""2018-09-20 21:36:24 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+""2018-09-20 21:36:24 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-09-20 21:36:24 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-09-20 21:36:24 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:36:24 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-09-20 21:36:24 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-09-20 21:37:48 [main] INFO  c.c.touchpoint.TouchPointApplication - Starting TouchPointApplication on DESKTOP-0IBRBFT with PID 2044 (D:\rozar\bin started by reddy in D:\rozar)
+""2018-09-20 21:37:48 [main] INFO  c.c.touchpoint.TouchPointApplication - No active profile set, falling back to default profiles: default
+""2018-09-20 21:37:48 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@636be97c: startup date [Thu Sep 20 21:37:48 EDT 2018]; root of context hierarchy
+""2018-09-20 21:37:50 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'jobLauncher' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=jobLauncher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/comopt/touchpoint/batch/BatchConfiguration.class]]
+""2018-09-20 21:37:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-09-20 21:37:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-09-20 21:37:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:37:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2018-09-20 21:37:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+""2018-09-20 21:37:54 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2018-09-20 21:37:54 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2018-09-20 21:37:54 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+""2018-09-20 21:37:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:37:55 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:37:55 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+""2018-09-20 21:37:55 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+""2018-09-20 21:37:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-09-20 21:37:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-09-20 21:37:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-09-20 21:37:57 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2018-09-20 21:37:58 [main] INFO  c.c.touchpoint.TouchPointApplication - Started TouchPointApplication in 9.933 seconds (JVM running for 11.218)
+""2018-09-20 21:37:58 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: []
+""2018-09-20 21:37:58 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] launched with the following parameters: [{run.id=1}]
+""2018-09-20 21:37:58 [main] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [chunkStep]
+""2018-09-20 21:37:59 [main] INFO  c.c.t.batch.CustomItemWriter - JSON:Touch Point JSON Strings send to queue [{"appId":"ccm","transId":"1","etlBusinessRecordId":"comm_pfm_trns_id1","sourceCd":null,"tenantId":1,"touchpoint":[{"extRefId":null,"initiator":{"id":"comm_pfm_status_cd1","category":"SYSTEM","constinuencyCd":"System"},"aboutWhom":{"id":"1234","category":"grp","constinuencyCd":"ENRL"},"whReciever":{"id":"whid","category":"MBR","constinuencyCd":"ENRL"},"mode":"OutBound","channelId":null,"reasonCd":null,"statDtTs":{"year":2018,"month":"SEPTEMBER","chronology":{"id":"ISO","calendarType":"iso8601"},"era":"CE","dayOfMonth":20,"dayOfWeek":"THURSDAY","dayOfYear":263,"leapYear":false,"monthValue":9},"commDetails":{"typeCd":"Home","address":[{"line1":"line 1","line2":"line2","cityName":"Jacksonville","stateName":"Florida","postalCd":"123456"}]}}]}]
+""2018-09-20 21:37:59 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=testJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+""2018-09-20 21:37:59 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@636be97c: startup date [Thu Sep 20 21:37:48 EDT 2018]; root of context hierarchy
+""2018-09-20 21:37:59 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+""2018-09-20 21:37:59 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-09-20 21:37:59 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-09-20 21:37:59 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-09-20 21:37:59 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-09-20 21:37:59 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 "

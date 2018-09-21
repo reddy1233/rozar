@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 import com.comopt.touchpoint.model.TouchPointActor;
 
-@Component
+//@Component
 public class ReceiverTest {
 
 	@JmsListener(destination = "DEV.QUEUE.1", containerFactory = "myFactory")
