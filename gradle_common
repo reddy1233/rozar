@@ -1,0 +1,151 @@
+apply plugin: 'java'
+
+apply plugin: 'maven-publish'
+
+apply plugin: 'signing'
+
+
+
+repositories {
+
+    mavenCentral()
+
+}
+
+
+
+dependencies {
+
+    compile 'com.google.code.findbugs:jsr305:3.0.1'
+
+    compile 'com.google.guava:guava:19.0'
+
+    compile 'com.google.code.gson:gson:2.5'
+
+    testCompile 'junit:junit:4.+'
+
+    testCompile 'com.google.truth:truth:0.28'
+
+}
+
+
+
+test {
+
+    // show standard out and standard error of the test JVM(s) on the console
+
+    testLogging.showStandardStreams = true
+
+}
+
+
+
+task sourceJar(type: Jar) {
+
+    classifier "sources"
+
+    from sourceSets.main.allJava
+
+}
+
+
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+
+    classifier "javadoc"
+
+    from javadoc.destinationDir
+
+}
+
+
+
+artifacts {
+
+    archives jar
+
+    archives sourceJar
+
+    archives javadocJar
+
+}
+
+
+
+
+
+
+
+publishing {
+
+    publications {
+
+        mavenJava(MavenPublication) {
+
+            //customizePom(pom)
+
+            groupId 'com.acme'
+
+            artifactId 'git-gradle-common-module'
+
+            version '1.0.1'
+
+
+
+            from components.java
+
+
+
+            
+
+        }
+
+    }
+
+    repositories {
+
+        maven {
+
+            url "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+
+            /*credentials {
+
+                username sonatypeUsername
+
+                password sonatypePassword
+
+            }*/
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+model {
+
+    tasks.generatePomFileForMavenJavaPublication {
+
+        destination = file("$buildDir/generated-pom.xml")
+
+    }
+
+    tasks.publishMavenJavaPublicationToMavenLocal {
+
+      //  dependsOn project.tasks.signArchives
+
+    }
+
+    tasks.publishMavenJavaPublicationToMavenRepository {
+
+    //    dependsOn project.tasks.signArchives
+
+    }
+
+}
